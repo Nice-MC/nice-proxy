@@ -1,0 +1,4 @@
+name: NiceProxy
+version: ${project.version}
+main: br.com.nicemc.proxy.Main
+description: Proxy bungeecord plugin for NiceMC
