@@ -16,8 +16,9 @@ public class Redis {
         this.connectionPool = connectionPool;
     }
 
-    public void connect() {
+    public Redis connect() {
         this.connectionPool.create();
+        return this;
     }
 
     public void set(Map<String, String> increments) {
@@ -27,7 +28,6 @@ public class Redis {
 
     public void set(String key, Object object) {
         Jedis jedis = getPool().getResource();
-
         jedis.set(key, new Gson().toJson(object));
     }
 

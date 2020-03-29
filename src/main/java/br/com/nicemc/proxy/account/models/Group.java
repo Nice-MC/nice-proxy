@@ -1,7 +1,7 @@
 package br.com.nicemc.proxy.account.models;
 
 import br.com.nicemc.proxy.account.enums.GroupType;
-import br.com.nicemc.proxy.server.ServerType;
+import br.com.nicemc.proxy.server.enums.ServerType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
